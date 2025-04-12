@@ -41,7 +41,7 @@
             <NuxtLink
               v-for="event in filteredEvents"
               :key="event.id"
-              :to="`/events/${event.id}`"
+              :to="`/events/${event.slug}`"
               class="block"
             >
               <div class="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -127,6 +127,7 @@ definePageMeta({
 const events = [
   {
     id: 1,
+    slug: 'community-wellness-workshop',
     title: 'Community Wellness Workshop',
     description: 'Join us for a day of wellness activities, including yoga, meditation, and mental health discussions led by experts in the field. This workshop is designed to promote physical and mental well-being within our community, providing practical tools and strategies that participants can incorporate into their daily lives. Through interactive sessions, participants will learn about stress management, mindfulness practices, and the importance of self-care.',
     date: 'June 15, 2024',
@@ -138,6 +139,7 @@ const events = [
   },
   {
     id: 2,
+    slug: 'youth-leadership-summit',
     title: 'Youth Leadership Summit',
     description: 'A two-day summit bringing together young leaders from across Tanzania to discuss challenges and opportunities in their communities. This event provides a platform for youth to share their experiences, learn from each other, and develop strategies for creating positive change. Through workshops, panel discussions, and networking opportunities, participants will gain valuable skills and insights to help them become effective leaders.',
     date: 'July 22-23, 2024',
@@ -149,6 +151,7 @@ const events = [
   },
   {
     id: 3,
+    slug: 'business-networking-breakfast',
     title: 'Business Networking Breakfast',
     description: 'Connect with local business leaders, entrepreneurs, and professionals in a relaxed setting over breakfast and meaningful conversations. This event provides an opportunity to expand your professional network, share ideas, and explore potential collaborations. Whether you\'re looking for new clients, partners, or simply want to stay connected with the local business community, this networking breakfast is not to be missed.',
     date: 'August 5, 2024',
@@ -160,6 +163,7 @@ const events = [
   },
   {
     id: 4,
+    slug: 'women-empowerment-forum',
     title: 'Women Empowerment Forum',
     description: 'A forum dedicated to discussing challenges faced by women in Tanzania and exploring solutions for greater gender equality and opportunity. This event brings together women from diverse backgrounds to share their experiences, challenges, and successes. Through panel discussions, workshops, and networking opportunities, participants will gain insights and strategies for overcoming barriers and achieving their goals.',
     date: 'March 8, 2024',
@@ -171,6 +175,7 @@ const events = [
   },
   {
     id: 5,
+    slug: 'environmental-sustainability-workshop',
     title: 'Environmental Sustainability Workshop',
     description: 'Learn about sustainable practices and how communities can work together to protect the environment for future generations. This workshop provides practical information and tools for implementing sustainable practices in your home, community, or organization. Through hands-on activities and expert presentations, participants will gain a deeper understanding of environmental issues and how to address them.',
     date: 'February 15, 2024',
@@ -182,6 +187,7 @@ const events = [
   },
   {
     id: 6,
+    slug: 'mental-health-awareness-day',
     title: 'Mental Health Awareness Day',
     description: 'A day dedicated to raising awareness about mental health issues, reducing stigma, and providing resources for those in need. This event aims to promote understanding and acceptance of mental health challenges, while providing information about available resources and support services. Through presentations, workshops, and personal stories, participants will gain insights into mental health and how to support themselves and others.',
     date: 'January 20, 2024',
