@@ -60,6 +60,13 @@ yarn build
 # bun
 bun run build
 ```
+Build the application for when logged in server:
+
+```bash
+apt update && apt install -y nodejs npm
+npm install
+npm run build     # or: quasar build / yarn build
+```
 
 Locally preview production build:
 
