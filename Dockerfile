@@ -12,7 +12,12 @@ RUN npm install
 RUN npm run build
 
 # === Serve Stage ===
-FROM caddy:alpine
+FROM node:20-alpine
 
-# Copy static built frontend into Caddy's serving directory
-COPY --from=builder /app/dist /usr/share/caddy
+WORKDIR /app
+
+COPY --from=builder /app ./
+
+EXPOSE 3000
+
+CMD ["node", ".output/server/index.mjs"]
