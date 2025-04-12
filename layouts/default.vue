@@ -12,9 +12,10 @@
           <!-- Mobile menu button -->
           <div class="md:hidden">
             <UButton 
-              color="gray" 
+              color="black" 
               variant="ghost" 
               icon="i-heroicons-bars-3" 
+              class="text-gray-800 hover:bg-gray-200 active:bg-gray-300"
               @click="mobileMenuOpen = !mobileMenuOpen"
             />
           </div>
@@ -23,15 +24,15 @@
           <div class="hidden md:flex gap-6">
             <NuxtLink 
               to="/" 
-              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              active-class="text-gray-900 bg-gray-100"
+              class="text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 w-20 text-center"
+              active-class="text-gray-900 bg-gray-100 font-semibold"
             >
               Home
             </NuxtLink>
             <NuxtLink 
               to="/contact" 
-              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              active-class="text-gray-900 bg-gray-100"
+              class="text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 w-20 text-center"
+              active-class="text-gray-900 bg-gray-100 font-semibold"
             >
               Contact
             </NuxtLink>
@@ -43,16 +44,16 @@
           <div class="flex flex-col space-y-2">
             <NuxtLink 
               to="/" 
-              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              active-class="text-gray-900 bg-gray-100"
+              class="text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 w-full text-center"
+              active-class="text-gray-900 bg-gray-100 font-semibold"
               @click="mobileMenuOpen = false"
             >
               Home
             </NuxtLink>
             <NuxtLink 
               to="/contact" 
-              class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              active-class="text-gray-900 bg-gray-100"
+              class="text-gray-600 hover:text-gray-900 hover:bg-gray-100 active:bg-gray-200 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 w-full text-center"
+              active-class="text-gray-900 bg-gray-100 font-semibold"
               @click="mobileMenuOpen = false"
             >
               Contact

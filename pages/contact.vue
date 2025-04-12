@@ -23,7 +23,7 @@
           
           <UButton 
             color="primary" 
-            class="w-full md:w-auto"
+            class="w-full md:w-auto hover:opacity-90 active:opacity-100 transition-opacity"
             @click.prevent="submit" 
           >
             Send Message

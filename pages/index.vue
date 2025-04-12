@@ -17,7 +17,7 @@
         </template>
         <p class="text-gray-600">We offer a wide range of services to meet your needs. Our team of experts is dedicated to providing the best solutions.</p>
         <div class="mt-4">
-          <UButton color="primary" variant="soft">Learn More</UButton>
+          <UButton color="primary" variant="soft" class="hover:opacity-90 active:opacity-100 transition-opacity">Learn More</UButton>
         </div>
       </UCard>
       
@@ -30,7 +30,7 @@
         </template>
         <p class="text-gray-600">Our team consists of experienced professionals who are passionate about delivering excellence in everything we do.</p>
         <div class="mt-4">
-          <UButton color="primary" variant="soft">Meet the Team</UButton>
+          <UButton color="primary" variant="soft" class="hover:opacity-90 active:opacity-100 transition-opacity">Meet the Team</UButton>
         </div>
       </UCard>
     </div>
@@ -41,7 +41,7 @@
           <h3 class="text-xl font-semibold text-primary-900">Ready to get started?</h3>
           <p class="text-primary-700">Contact us today to learn more about our services.</p>
         </div>
-        <UButton color="primary" to="/contact">Contact Us</UButton>
+        <UButton color="primary" to="/contact" class="hover:opacity-90 active:opacity-100 transition-opacity">Contact Us</UButton>
       </div>
     </div>
   </div>
